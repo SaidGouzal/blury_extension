@@ -1,0 +1,18 @@
+{
+  "description": "Blur every element you click on in any website you visit",
+  "icons": {
+    "128": "./icon.png"
+  },
+  "host_permissions": ["*://*/"],
+  "manifest_version": 3,
+  "name": "BlurY",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["Content.js"],
+      "css": ["Content.css"]
+    }
+  ],
+  "version": "1.0.0",
+  "content_security_policy": {}
+}
